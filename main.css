@@ -1,0 +1,70 @@
+/* Constantes globais do CSS */
+:root {
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #808080;
+    --whiteShadow: rgba(255, 255, 255, 0.35);
+    --blackShadow: rgba(1, 1, 1, 0.35);
+}
+
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body {
+    background: var(--bg);
+}
+
+ul {
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+    color: var(--listColor);
+}
+  
+.list {
+    list-style: square;
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 75%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }
+  
+.btn:focus { 
+    outline-style: none;
+    cursor: pointer; 
+}
+
+/* Color themes */
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --listColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+    --modalBg: var(--white);
+    --modalShadow: var(--blackShadow);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --listColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+    --modalBg: var(--black);
+    --modalShadow: var(--whiteShadow);
+}

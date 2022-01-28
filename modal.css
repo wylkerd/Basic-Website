@@ -1,0 +1,78 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 15%;
+    top: 30%;
+    width: 70%; /* Full width */
+    height: 223px; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: var(--modalBg);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.6s;
+    animation-name: animatetop;
+    animation-duration: 0.6s;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px var(--modalShadow);
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: var(--gray);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 2px 16px;
+}
+
+/* Modal Footer */
+.modal-footer {
+    display: flex;
+    padding: 2px 16px;
+    background-color: var(--gray);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px ;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: 100%; opacity: 0}
+    to {top: 30%; opacity: 1}
+}
+
+#myBtn:hover {
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
